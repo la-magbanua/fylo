@@ -1,0 +1,45 @@
+.features {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+
+  .inner-features {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 3rem;
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2.5rem;
+
+      h2 {
+        font-family: $raleway;
+        margin-bottom: 0;
+      }
+
+      p {
+        text-align: center;
+        padding: 0 2rem;
+        line-height: 1.5;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      grid-template-columns: 1fr;
+
+      .feature {
+        padding: 1rem;
+        h2 {
+          text-align: center;
+        }
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

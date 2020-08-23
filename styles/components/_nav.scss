@@ -1,0 +1,32 @@
+nav {
+  background: $heroBg;
+
+  .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .brand {
+    @media screen and (max-width: 500px) {
+      img {
+        width: 100px;
+        // height: 150px;
+      }
+    }
+  }
+
+  .nav-links {
+    a {
+      text-decoration: none;
+      font-family: $raleway;
+      font-weight: $normal;
+      color: $white;
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+}

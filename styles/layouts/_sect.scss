@@ -1,0 +1,48 @@
+.sect {
+  padding: 5rem 0;
+  .inner-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sect-details {
+      padding: 0 4rem;
+      h1 {
+        font-size: 2.5rem;
+        font-family: $raleway;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      p:last-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .inner-sect {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .sect-image-container {
+        img {
+          width: 350px;
+        }
+      }
+
+      .sect-details {
+        margin-top: 2rem;
+        padding: 0 1rem;
+        h1 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

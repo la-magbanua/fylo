@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: $white;
+}
+
+main {
+  background: $mainBg;
+}
+
+footer {
+  background: $footerBg;
+  color: $white;
+}
